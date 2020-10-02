@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.carousel-slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  transform: translateX(0px);
+}
+
+.carousel-slide > img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
